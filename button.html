@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .pulsante{
+                background-color: gray;
+                color: blueviolet;
+                border-radius: 10px;width: 150px;height: 75px;font-size: 20px;
+                margin:20px;
+            }
+        </style>
+
+       <title>My buttons!!</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <body>
+        <article class="regular">
+            <div class="container">
+                <div class="row">
+                    <div class="col justify-content-center">
+                         <label for="tbnumber">Numero:</label>
+                         <input type="text" id="tbnumber" placeholder="Enter number">
+                         <input type="button" id="btn1" class="btn btn-outline-warning" value="Press Me">
+                         <p class="output" id="output1"></p>
+                    </div>
+                </div>
+            </div>
+
+        </article>     
+        <div class="container">
+            <div class="row">
+                <div class="col justify-content-center">
+                    <button onclick="doSomething()" class = "btn btn-outline-primary">-1 Sul valore</button>
+                </div>
+                <div class="col justify-content-center">
+                    <button onclick="doSomething2()" class = "btn btn-outline-success">+1 Sul valore</button>
+                </div>
+                <div class="col justify-content-center">
+                    <button onclick="doSomething3()" class = "btn btn-outline-danger">/2 Sul valore</button>
+                </div>
+                <div class="col justify-content-center">
+                    <button onclick="doSomething4()" class = "btn btn-outline-dark">x2 Sul valore</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+    <script src="javascript.js"></script>
+</html>
